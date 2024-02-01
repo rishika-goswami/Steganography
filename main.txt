@@ -1,0 +1,16 @@
+Steganography is the technique of hiding data within an ordinary, non-secret file or message to avoid detection; the hidden data is then extracted at its destination. Steganography use can be combined with encryption as an extra step for hiding or protecting data. 
+In modern digital steganography, data is first encrypted or obfuscated, and then inserted using a special algorithm into data that is part of a particular file format, such as a JPEG image, audio or video file. The secret message can be embedded into ordinary data files in many ways. One technique is to hide data in bits that represent the same color pixels repeated in a row in an image file. By applying the encrypted data to this redundant data in an inconspicuous way, the result is an image file that appears identical to the original image, but has noise patterns of regular, unencrypted data.
+
+There are many forms of steganography like text, image, audio, video, network steganography, etc. I recently learned to use steganography in two ways, first is a tool called, 'Xiao Stenography Tool' and the other method is without using any tool. The tool is quite easy to operate and just requires an image(.bmp) and a text file(.txt) containing the message.
+
+
+The simplest way of using steganography without a tool, needs only WinRAR.
+1) First, we need to create a new .rar file from the .txt file containing the message using WinRAR (message.rar created from message.txt)
+We already have the image as original_image.JPG in which we want to hide the message.
+
+2) For easier access, let us move the message.rar and original_image.JPG to the Desktop.
+
+3) After getting inside the Desktop directory in the command prompt, we just have to copy the original_image.JPG and the message.rar file to a new .JPG file, let's say encrypted_image.JPG by writing: copy /b message.rar + original_image.JPG encrypted_image.JPG
+
+Now, we cannot open encrypted_image.JPG in the way we can open normal .JPG files. 
+If we open encrypted_image.JPG using WinRAR archiver, we can see the message.txt.
