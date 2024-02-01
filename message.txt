@@ -1,0 +1,3 @@
+hello!
+this is the text file hidden with the picture.
+(sample message)
